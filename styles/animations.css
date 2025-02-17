@@ -9,3 +9,12 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+@keyframes big-heart {
+    from {
+        background-color: #fff;
+    }
+    to {
+        
+        background-color: #000;
+    }
+  }

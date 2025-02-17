@@ -1,1 +1,24 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --font-family-main: 'Inter';
+    --font-Press-Start-2P: 'Press Start 2P';
+    --font-weight-main-text: 700;
+    --font-weight-card-title: 700;
+    --width-header: clamp(700px, 700px, 700px);
+    --height-header: clamp(327px, 368px, 368px);
+    --size-main-title: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+    --size-title-caption: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+    --size-title-post: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);;
+
+    --color-background-common-blocks: rgba(255, 255, 255, 1);
+    --color-text-shadow-label: rgba(255, 255, 255, 1);
+    --color-background-button: rgba(255, 255, 255, 1);
+    --color-border-button-like: rgba(0, 0, 0, 1);
+    --color-button-focus: rgba(0, 0, 0, 1);
+}
+
+@media (width <= 375px) {
+    :root {
+        --width-header: 100%;
+    }
+}
