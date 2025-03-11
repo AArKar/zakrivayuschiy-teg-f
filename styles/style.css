@@ -65,7 +65,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 50px;
 }
 
 .post {
@@ -92,6 +92,8 @@
   opacity: 0.5;
   mix-blend-mode: hard-light;
   text-shadow: 0px 0px 0 var(--color-text-shadow-label);
+  font-family: var(--font-Press-Start-2P), sans-serif;
+  font-size: 14px;
   top: 25px;
   right: 25px;
 }
@@ -127,7 +129,7 @@
 .buttons_likes {
   justify-content: end;
   display: flex;
-  gap: 13px;
+  /*gap: 7px;*/
   padding: 0 25px 25px 25px;
 }
 
@@ -184,7 +186,7 @@
   border: none;
   /* width: 39px; */
   height: 38px;
-  padding: 0;
+  /*padding: 0;*/
   background-color: var(--color-background-button);
 }
 
