@@ -14,7 +14,7 @@
   /* max-inline-size: var(--page-width); */
   /* min-inline-size: 320px; */
   /* min-block-size: 100dvb; */
-  /*font-family: var(--font-family-main), sans-serif;*/
+  font-family: var(--font-family-main), sans-serif;
   font-variation-settings: var(--font-weight-main-text);
   margin: auto;
   background-image: repeating-linear-gradient(to top, #d3d3d3, #d3d3d3 2px, transparent 2px, transparent 4px),
@@ -37,8 +37,8 @@
   align-items: center;
   margin: 100px 0;
   font-family: var(--font-Press-Start-2P), sans-serif;
+  font-variation-settings: "wght" 400;
   /*block-size: 368px;*/
-  font-weight: 400;
 }
 
 .common_blocks {
@@ -110,7 +110,7 @@
 }
 
 .image_3 {
-  filter: invert(100%);
+  filter: invert(100%) sepia(0.6);
 }
 
 .image_4 {
@@ -133,45 +133,25 @@
   filter: contrast(20%);
 }
 
-.gallery__item {
-  position: relative;
-  min-inline-size: 696px;
-  min-block-size: 696px;
-  border-block-start: 2px solid #000;
-  border-block-end: 2px solid #000;
-  margin: 0;
-}
-
-@supports selector(:has(button:focus-visible)) {
-  .container:focus-within {
-    background-color: #fff;
-  }
-}
-
-.image_start {
-  display: block;
-  background-position: center;
-  object-fit: cover;
-  background-size: cover;
-  inline-size: 100%;
-  aspect-ratio: 1 / 1;
-  /* inline-size: 100%;
-  block-size: 100%;
-  max-block-size: 100%;
-  object-fit: cover; */
-}
-
 .image_label {
   position: absolute;
   height: 14px;
   opacity: 0.5;
   mix-blend-mode: hard-light;
-  text-shadow: 0px 0px 0 var(--color-text-shadow-label);
+  /*text-shadow: 0px 0px 0 var(--color-text-shadow-label);*/
   font-family: var(--font-Press-Start-2P), sans-serif;
+  font-variation-settings: "wght" 400;
+  -webkit-text-stroke: 1px var(--color-text-shadow-label);
   font-size: 14px;
   top: 25px;
   right: 25px;
 }
+
+@supports (text-stroke: 1px var(--color-text-shadow-label)) {
+  .image_label {
+    text-stroke: 1px var(--color-text-shadow-label);
+  }
+} 
 
 .post_caption {
   display: grid;
@@ -192,6 +172,7 @@
 .general_button {
   background-color: var(--color-background-button);
   font-family: var(--font-Press-Start-2P), sans-serif;
+  font-variation-settings: "wght" 400;
   font-size: 14px;
   line-height: 12.6px;
   height: 38px;
@@ -358,6 +339,7 @@
   max-inline-size: 357px;
   max-block-size: 193px;
   font-family: var(--font-Press-Start-2P), sans-serif;
+  font-variation-settings: "wght" 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
