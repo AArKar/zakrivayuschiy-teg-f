@@ -8,7 +8,7 @@
     --height-header: clamp(327px, 368px, 368px);
     --size-main-title: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
     --size-title-caption: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
-    --size-title-post: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);;
+    --size-title-post: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
 
     --color-background-common-blocks: rgba(255, 255, 255, 1);
     --color-text-shadow-label: rgba(255, 255, 255, 1);
