@@ -37,7 +37,7 @@
   align-items: center;
   margin: 100px 0;
   font-family: var(--font-Press-Start-2P), sans-serif;
-  font-variation-settings: "wght" 400;
+  font-variation-settings: normal;
   /*block-size: 368px;*/
 }
 
@@ -51,7 +51,8 @@
   font-size: var(--size-main-title);
   line-height: 65px;
   padding-bottom: 20px;
-  font-weight: normal;
+  /*font-weight: normal;
+  font-variation-settings: 'wght' normal;*/
 }
 
 .title_caption {
@@ -140,7 +141,7 @@
   mix-blend-mode: hard-light;
   /*text-shadow: 0px 0px 0 var(--color-text-shadow-label);*/
   font-family: var(--font-Press-Start-2P), sans-serif;
-  font-variation-settings: "wght" 400;
+  font-variation-settings: 'wght' 400;
   -webkit-text-stroke: 1px var(--color-text-shadow-label);
   font-size: 14px;
   top: 25px;
@@ -157,7 +158,7 @@
   display: grid;
   font-size: 18px;
   line-height: 21px;
-  font-variation-settings: "wght" 400;
+  font-variation-settings: 'wght' 400;
   gap: 27px;
   padding: 25px;
 }
@@ -172,7 +173,7 @@
 .general_button {
   background-color: var(--color-background-button);
   font-family: var(--font-Press-Start-2P), sans-serif;
-  font-variation-settings: "wght" 400;
+  font-variation-settings: 'wght' 400;
   font-size: 14px;
   line-height: 12.6px;
   height: 38px;
@@ -339,7 +340,7 @@
   max-inline-size: 357px;
   max-block-size: 193px;
   font-family: var(--font-Press-Start-2P), sans-serif;
-  font-variation-settings: "wght" 400;
+  font-variation-settings: 'wght' 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
