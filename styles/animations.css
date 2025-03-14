@@ -10,11 +10,14 @@
 
 */
 @keyframes big-heart {
-    from {
-        background-color: #fff;
-    }
     to {
-        
-        background-color: #000;
-    }
-  }
+      transform: translate(-15%, -15%) scale(1.25);
+      }
+}
+
+
+@keyframes sparks-heart {
+    to {
+        opacity: 1;
+      }
+}
