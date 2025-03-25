@@ -11,7 +11,7 @@
 */
 @keyframes big-heart {
     to {
-      transform: translate(-15%, -15%) scale(1.25);
+      transform: scale(1.25);
       }
 }
 
