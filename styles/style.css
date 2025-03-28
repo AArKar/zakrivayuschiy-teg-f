@@ -122,14 +122,19 @@
   opacity: 0.5;
   mix-blend-mode: hard-light;
   font-family: var(--font-header), fantasy;
-  text-stroke: 1px var(--color-text-shadow-label);
+  text-shadow: -1px 0 var(--color-text-shadow-label), 
+                0 1px var(--color-text-shadow-label), 
+                1px 0 var(--color-text-shadow-label), 
+                0 -1px var(--color-text-shadow-label);
   font-size: 14px;
   top: var(--image-label-top);
   right: var(--image-label-right);
 }
 
-@supports (text-stroke: 1px var(--color-text-shadow-label)) {
+@supports ((text-stroke: 1px var(--color-text-shadow-label)) or (-webkit-text-stroke: 1px var(--color-text-shadow-label))) {
   .image_label {
+    text-shadow: none;
+    text-stroke: 1px var(--color-text-shadow-label);
     -webkit-text-stroke: 1px var(--color-text-shadow-label);
   }
 } 
